@@ -5,9 +5,6 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var canvas, angle, tower, ground, cannon;
 
-
-
-
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
   towerImage = loadImage("./assets/tower.png");
@@ -19,7 +16,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  tower = new Tower(150, 350, 160, 310);
+  tower = new Tower(150, 350, 160, 310); // cria uma nova torre
   
 
 }
@@ -33,10 +30,7 @@ function draw() {
   Engine.update(engine);
   
 
- tower.display();
+ tower.display(); // exibe a torre
   
  
 }
-
-
-
