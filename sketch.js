@@ -17,20 +17,11 @@ function setup() {
   world = engine.world;
 
   tower = new Tower(150, 350, 160, 310); // cria uma nova torre
-  
-
 }
 
 function draw() {
   background(189);
   image(backgroundImg, 0, 0, width, height);
-
-  
-
   Engine.update(engine);
-  
-
  tower.display(); // exibe a torre
-  
- 
 }
